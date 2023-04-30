@@ -1,0 +1,11 @@
+## AUR packages
+# btrfs-assistant snapper-support snapper-tools
+
+## terminal
+brew-git dia downgrade debtap fastfetch nb
+
+## gui
+activitywatch-bin bottles eaglemode fluent-reader helvum-git google-earth-pro ungoogled-chromium upscayl-bin xampp webcamoid xampp
+
+# not-essential
+# autofirma-bin cava freetube-bin libpamac libpamac-aur libpamac-flatpak pamac-aur rate-mirrors wlroots-git youtube-music-bin
