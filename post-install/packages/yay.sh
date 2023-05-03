@@ -9,8 +9,7 @@ fi
 
 echo "Start installation of AUR packages with yay"
 
-# grep -v "^#" ./pkglist/aur.txt | xargs sudo yay -S
-# cat ./pkglist/aur.txt | xargs sudo yay -S
-pacman -S --needed - < ./pkglist/aur.txt
+grep -v "^#" ./pkglist/aur.txt | xargs sudo yay -S
+# pacman -S --needed - < ./pkglist/aur.txt
 
 echo "done"

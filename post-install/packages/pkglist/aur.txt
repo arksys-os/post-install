@@ -1,0 +1,33 @@
+### CLI
+activitywatch-bin
+# bottles
+eaglemode
+# fluent-reader
+helvum-git
+google-earth-pro
+ungoogled-chromium
+upscayl-bin
+xampp
+
+### EXTRA
+# autofirma-bin
+# cava
+# freetube-bin
+# libpamac
+# libpamac-aur
+# libpamac-flatpak
+# pamac-aur
+# rate-mirrors
+# wlroots-git
+# youtube-music-bin
+
+### TOOLS
+# btrfs-assistant
+# snapper-support
+# snapper-tools
+brew-git
+dia
+downgrade
+debtap
+fastfetch
+nb

@@ -31,11 +31,11 @@ $(ColorGreen '0)') Exit
 $(ColorBlue 'Choose an option:') "
         read a
         case $a in
-	        1) sh ./installation/post/install-packages/pacman.sh ; menu ;;
-	        2) sh ./installation/post/install-packages/yay.sh ; menu ;;
-	        3) sh ./installation/post/install-packages/flatpak.sh ; menu ;;
-	        4) sh ./installation/post/chaotic-aur.sh ; menu ;;
-	        5) sh ./installation/post/import-config-files.sh ; menu ;;
+	        1) sh ./dotfiles/import.sh ; menu ;;
+	        2) sh ./packages/pacman.sh ; menu ;;
+	        3) sh ./packages/yay.sh ; menu ;;
+	        4) sh ./packages/flatpak.sh ; menu ;;
+	        5) sh ./server/chaotic-aur.sh ; menu ;;
 		0) exit 0 ;;
 		*) echo -e $red"Wrong option."$clear; WrongCommand;;
         esac

@@ -1,0 +1,249 @@
+### DE-KDE
+plasma-desktop
+plasma-meta
+plasma-workspace
+plasma-wayland-session
+# accountsservice
+appstream-qt
+baloo
+bluedevil
+drkonqi
+gawk
+kactivitymanagerd
+khelpcenter
+konsole
+kmix
+kwin
+kmousetool
+kpeople
+kpipewire
+kscreen
+ksystemstats
+kwallet
+powerdevil
+sddm-kcm
+wayland-protocols
+
+## SYS-LOADER
+grub
+grub-btrfs
+grub-customizer
+grub-theme-vimix
+
+### KERNEL
+linux
+# linux-lts
+# linux-hardened
+# linux-zen
+archinstall
+base
+base-devel
+dracut
+efibootmgr
+kernel-modules-hook
+linux-firmware
+linux-headers
+mkinitcpio
+syslinux
+wireless-regdb
+
+### DISPLAY-SERVER
+xorg-server
+xorg-xwayland
+upower
+
+### VIDEO-DRIVER
+lib32-mesa
+libva-mesa-driver
+mesa
+xf86-video-amdgpu
+xf86-video-nouveau
+xf86-video-vesa
+xf86-video-ati-git
+xf86-video-chips
+nvidia
+# nvidia-dkms
+# nvidia-open
+# nvidia-open-dkms
+# nvidia-lts
+# nvidia-utils
+# nvidia-settings
+
+### AUDIO-DRIVER
+alsa-firmware
+pipewire
+pipewire-alsa
+pipewire-audio
+pipewire-media-session
+pipewire-pulse
+pipewire-support
+pipewire-v4l2
+pipewire-x11-bell
+pipewire-zeroconf
+
+## CLI
+asciinema
+basic-tools
+bash-completion
+bind
+curl
+docker
+docker-compose
+dpkg
+flatpak
+fscrypt
+geoip
+git
+gnu-netcat
+hblock
+hugo
+lshw
+iw
+man-db
+man-pages
+mtools
+nmap
+neofetch
+ntfs-3g
+profile-sync-daemon
+reflector
+rsync
+snapper
+traceroute
+tree
+tmux
+unrar
+usbutils
+wget
+whois
+wine
+yad
+yt-dlp
+
+### GUI
+tools
+bleachbit
+clonezilla
+firewalld
+gparted
+keepassxc
+handbrake
+picard
+qbittorrent
+
+### KDE-EXTRA
+ark
+digikam
+elisa
+filelight
+ffmpegthumbnailer
+ffmpegthumbs
+gwenview
+inkscape
+kamera
+kate
+kbackup
+kcachegrind
+kcalc
+kcron
+kdeconnect
+kdenetwork-filesharing
+kdenlive
+kinit
+kmouth
+kontrast
+krita
+ksystemlog
+# latte-dock
+markdownpart
+okular
+partitionmanager
+print-manager
+skanlite
+skanpage
+spectacle
+sweeper
+yakuake
+
+### FONTS
+nerd-fonts
+powerline-fonts
+terminus-font
+ttf-iosevka-nerd
+ttf-jetbrains-mono-nerd
+ttf-linux-libertine
+ttf-monoid-nerd
+ttf-space-mono-nerd
+ttf-terminus-nerd
+ttf-victor-mono-nerd
+
+## LIBS
+lib
+lib32-alsa-lib
+lib32-curl
+lib32-libxml2
+lib32-libxmu
+lib32-pipewire
+lib32-pipewire-jack
+lib32-vulkan-icd-loader
+lib32-wayland
+libpipeline
+libx86emu
+libkiwix
+
+### TERMINAL
+alacritty
+kitty
+starship
+terminus-font
+
+## WEB-BROWSER
+chromium
+firefox
+lynx
+
+### EDITOR
+arduino
+blender
+code
+gimp
+godot
+imagemagick
+libreoffice-fresh
+obsidian
+neovim
+
+## VIEWER
+audacious
+calibre
+ffmpeg
+ffmpegthumbnailer
+ffmpegthumbs
+kiwix-desktop
+kiwix-tools
+mpv
+shotwell
+vlc
+
+## RECORDER
+cheese
+kamoso
+# flameshot
+obs-studio
+
+### SOCIAL
+discord
+telegram-desktop
+
+## VIRTUAL-EMULATOR
+libvirt
+libwebp
+qemu-base
+qemu-desktop
+virt-install
+# virtualbox
+
+### GAMES
+steam
+# supertux
+# supertuxkart
