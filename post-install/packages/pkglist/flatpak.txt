@@ -1,17 +1,17 @@
-### EDITOR
+# EDITOR
 # org.gimp.GIMP
 # io.gitlab.theevilskeleton.Upscaler
 # sh.ppy.osu
 
-### GAMES
+# GAMES
 net.veloren.airshipper
 
-### TOOLS
+# TOOLS
 com.usebottles.bottles
 com.github.tchx84.Flatseal
 # net.davidotek.pupgui2
 
-### VIEWER
+# VIEWER
 # io.lbry.lbry-app
 # me.hyliu.fluentreader
 org.kiwix.desktop

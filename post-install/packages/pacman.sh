@@ -1,8 +1,9 @@
 #! /bin/bash
 
-echo "Start installation of arch packages with pcaman"
+echo "Start installation of arch packages with pacman"
 
-grep -v "^#" ./pkglist/arch.txt | xargs sudo pacman -S
+cd "$(dirname "$0")/pkglist"
+grep -v "^#" arch.txt | xargs sudo pacman -S --noconfirm --needed
 # pacman -S --needed - < ./pkglist/arch.txt
 
-echo "done"
+echo "\nDone"
