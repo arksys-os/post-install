@@ -34,9 +34,9 @@ $(ColorBlue 'Choose an option:') "
     case $choice in
 		1) sh ./dotfiles/import.sh ; menu ;;
 		2) sh ./packages/pacman.sh ; menu ;;
-	    3) sh ./packages/yay.sh ; menu ;;
-	    4) sh ./packages/flatpak.sh ; menu ;;
-	    5) sh ./server/chaotic-aur.sh ; menu ;;
+		3) sh ./packages/yay.sh ; menu ;;
+		4) sh ./packages/flatpak.sh ; menu ;;
+		5) sh ./server/chaotic-aur.sh ; menu ;;
 		0) exit 0 ;;
 		*) echo -e $red"Wrong option."$clear; WrongCommand;;
 	esac

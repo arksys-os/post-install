@@ -167,6 +167,7 @@ yakuake
 
 ### FONTS
 nerd-fonts
+noto-fonts-emoji
 powerline-fonts
 terminus-font
 ttf-iosevka-nerd
