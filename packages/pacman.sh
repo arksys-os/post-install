@@ -6,4 +6,4 @@ cd "$(dirname "$0")/pkglist"
 grep -v "^#" arch.txt | xargs sudo pacman -S --noconfirm --needed
 # pacman -S --needed - < ./pkglist/arch.txt
 
-echo "\nDone"
+echo "\nArch packages installed"

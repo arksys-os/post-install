@@ -1,4 +1,4 @@
-# Configuration files on Unix
+# Configuration files on UNIX
 
 ## The kernel
 * /proc/sys/kernel/threads-max - The maximum number of tasks the kernel can run.

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Start installation of flathub packages with flatpak"
+echo "Start installation of packages from flathub with flatpak"
 
 cd "$(dirname "$0")/pkglist"
 
@@ -9,4 +9,4 @@ cd "$(dirname "$0")/pkglist"
 
 grep -v '^#' flatpak.txt | xargs -r -I '{}' flatpak install -y '{}'
 
-echo "done"
+echo "\nFlatpak packages installed"

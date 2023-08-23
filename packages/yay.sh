@@ -14,4 +14,4 @@ cd "$(dirname "$0")/pkglist"
 grep -v "^#" arch.txt | xargs sudo yay -S --noconfirm --needed
 # pacman -S --needed - < ./pkglist/aur.txt
 
-echo "done"
+echo "\nAUR packages installed"
