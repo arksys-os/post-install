@@ -162,7 +162,7 @@ sweeper
 yakuake
 
 ### FONTS
-noto-fonts-emoji
+noto-fonts-emoji  # fix the display of kde emoji selector app
 powerline-fonts
 terminus-font
 ttf-iosevka-nerd
