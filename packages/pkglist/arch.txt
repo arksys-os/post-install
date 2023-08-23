@@ -25,10 +25,10 @@ sddm-kcm
 wayland-protocols
 
 ## SYS-LOADER
-grub
-grub-btrfs
-grub-customizer
-grub-theme-vimix
+#grub
+#grub-btrfs
+#grub-customizer
+#grub-theme-vimix
 
 ### KERNEL
 linux
@@ -43,7 +43,7 @@ efibootmgr
 kernel-modules-hook
 linux-firmware
 linux-headers
-mkinitcpio
+#mkinitcpio
 syslinux
 wireless-regdb
 
@@ -59,8 +59,6 @@ mesa
 xf86-video-amdgpu
 xf86-video-nouveau
 xf86-video-vesa
-xf86-video-ati-git
-xf86-video-chips
 nvidia
 # nvidia-dkms
 # nvidia-open
@@ -74,7 +72,7 @@ alsa-firmware
 pipewire
 pipewire-alsa
 pipewire-audio
-pipewire-media-session
+#pipewire-media-session
 pipewire-pulse
 pipewire-support
 pipewire-v4l2
@@ -83,7 +81,6 @@ pipewire-zeroconf
 
 ## CLI
 asciinema
-basic-tools
 bash-completion
 bind
 curl
@@ -121,7 +118,6 @@ yad
 yt-dlp
 
 ### GUI
-tools
 bleachbit
 clonezilla
 firewalld
@@ -145,7 +141,7 @@ kate
 kbackup
 kcachegrind
 kcalc
-kcron
+#kcron
 kdeconnect
 kdenetwork-filesharing
 kdenlive
@@ -166,7 +162,6 @@ sweeper
 yakuake
 
 ### FONTS
-nerd-fonts
 noto-fonts-emoji
 powerline-fonts
 terminus-font
@@ -174,20 +169,20 @@ ttf-iosevka-nerd
 ttf-jetbrains-mono-nerd
 ttf-linux-libertine
 ttf-monoid-nerd
+ttf-nerd-fonts-symbols
 ttf-space-mono-nerd
 ttf-terminus-nerd
 ttf-victor-mono-nerd
 
 ## LIBS
-lib
-lib32-alsa-lib
-lib32-curl
-lib32-libxml2
-lib32-libxmu
-lib32-pipewire
-lib32-pipewire-jack
-lib32-vulkan-icd-loader
-lib32-wayland
+#lib32-alsa-lib
+#lib32-curl
+#lib32-libxml2
+#lib32-libxmu
+#lib32-pipewire
+#lib32-pipewire-jack
+#lib32-vulkan-icd-loader
+#lib32-wayland
 libpipeline
 libx86emu
 libkiwix
@@ -237,9 +232,9 @@ discord
 telegram-desktop
 
 ## VIRTUAL-EMULATOR
-libvirt
-libwebp
-qemu-base
+#libvirt
+#libwebp
+#qemu-base
 qemu-desktop
 virt-install
 # virtualbox
