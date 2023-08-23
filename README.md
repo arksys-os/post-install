@@ -29,7 +29,8 @@ Extra packages are all the programs that are not essential for the Operating Sys
 ## How to do a post installation?
 Download this repo and execute the script "menu.sh", then you can install a selected list of packages with (pacman, yay, flatpak).
 
-> [!NOTE] You can edit the list packages before installing in "./packages/pkglist" for arch, aur and flatpak.
+> [!NOTE]
+> You can edit the list packages before installing in "./packages/pkglist" for arch, aur and flatpak.
 
 ```sh
 git clone https://github.com/arksys-os/arksys_post-install.git
