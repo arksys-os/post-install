@@ -108,11 +108,21 @@
 
 ### Dot-files
 
+#### Apps
+* Mozilla:
+    * ~/.mozilla/extensions
+    * ~/.mozilla/firefox
+* SSH:
+    * ~/.ssh/config
+    * ~/.ssh/ark-github
+    * ~/.ssh/ark-github.pub
+* Visual Studio Code
+    * ~/.vscode-oss # ~/.vscode or ~/.vscodium
+
+#### Config
 * Blender:
-    * /usr/share/blender/
-* Bottles:
-    * ~/.local/share/bottles
-* KDE plasma;
+    * ~/.config/blender/
+* KDE-plasma;
     * ~/.config/baloofilerc
     * ~/.config/bluedevilglobalrc
     * ~/.config/breezerc
@@ -131,7 +141,7 @@
     * ~/.config/kdeconnect
     * ~/.config/kded5rc
     * ~/.config/kded_device_automounterrc
-    * ~/.config/kdeglobals
+    * ~/.config/kdeglobals - KDE global configuration
     * ~/.config/kfontinstuirc
     * ~/.config/kgammarc
     * ~/.config/kglobalshortcutsrc
@@ -142,7 +152,7 @@
     * ~/.config/ksmserverrc
     * ~/.config/ksplashrc
     * ~/.config/ktimezonedrc
-    * ~/.config/kwinrc
+    * ~/.config/kwinrc - KDE window manager configuration
     * ~/.config/kwinrulesrc
     * ~/.config/kxkbrc
     * ~/.config/plasmanotifyrc
@@ -155,23 +165,26 @@
     * ~/.config/Trolltech.conf
 * Kitty
     * ~/.config/kitty/kitty.conf
-* Mozilla:
-    * ~/.mozilla/extensions
-    * ~/.mozilla/firefox
+* mpv:
+    * ~/.config/mpv/mpv.conf
+* Neovim:
+    * ~/.config/neofetch/config.conf
 * Neovim:
     * ~/.config/nvim/init.vim
-* NetworkManager:
-    * /etc/NetworkManager/system-connections
+* Starship:
+    * ~/.config/starship.toml
+
+#### Local
+* Bottles:
+    * ~/.local/share/bottles
 * PhotoGIMP:
     * ~/.local/share/applications/org.gimp.GIMP.desktop
     * ~/.local/share/icons/hicolor
     * ~/.var/app/org.gimp.GIMP/config/GIMP/2.10/ (flatpak patch customization for GIMP)
-* SSH:
-    * ~/.ssh/config
-    * ~/.ssh/d7-github
-    * ~/.ssh/d7-github.pub
-* Visutal Studio Code
-    * ~/.vscode-oss # ~/.vscode or ~/.vscodium
+
+#### Var
+* Flatpak packages:
+    * ~/.var/app
 
 ## Resources
 - [Config files - IBM](https://developer.ibm.com/articles/l-config/)
