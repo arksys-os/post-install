@@ -18,10 +18,8 @@
 
 ## Booting and login/logut
 * /etc/issue & /etc/issue.net - These files are read by mingetty (and similar programs) to display a "welcome" string to the user connecting from a terminal (issue) or through a telnet session (issue.net). 
-                                They include a few lines stating the Red Hat release number, name, and Kernel ID. They are used by rc.local.
 * /etc/redhat-release -	Includes one line stating the Red Hat release number and name. Used by rc.local.
-* /etc/rc.d/rc - Normally run for all run levels with level passed as argument. For example, to boot your machine in the Graphics mode (X-Server), run the following command from your command line: init 5. 
-                The runlevel 5 is starts the system in graphics mode.
+* /etc/rc.d/rc - Normally run for all run levels with level passed as argument. For example, to boot your machine in the Graphics mode (X-Server), run the following command from your command line: init 5 (graphic mode).
 * /etc/rc.d/rc.local - Not official. May be called from rc, rc.sysinit, or /etc/inittab.
 * /etc/rc.d/rc.sysinit - Normally the first script run for all run levels.
 * /etc/rc.d/rc/rc X.d - Scripts run from rc (X stands for any number from 1 to 5). These directories are "run-level" specific directories. 
@@ -29,7 +27,7 @@
 ## Daemons
 - /etc/syslogd.conf
 - /etc/httpd.conf
-- /etc/conf.modules or /etc/modules.conf
+- /etc/modules.conf or /etc/conf.modules
 
 ## File system
 * /etc/mtab - This changes continuously as the file /proc/mount changes. In other words, when filesystems are mounted and unmounted, the change is immediately reflected in this file.
@@ -55,13 +53,12 @@
 * /etc/sysconfig/network-scripts/if* - Red Hat network configuration scripts.
 
 ## System administration
-* /etc/group - Contains the valid group names and the users included in the specified groups. A single user can be present in more than one group if he performs multiple tasks. 
-               For example, is a "user" is the administrator as well as a member of the project group "project 1", then his entry in the group file will look like: user: * : group-id : project1
+* /etc/group - Contains the valid group names and the users included in the specified groups. A single user can be present in more than one group if he performs multiple tasks.
 * /etc/nologin - If the file /etc/nologin exists, login(1) will allow access only to root. Other users will be shown the contents of this file and their logins refused.
-* /etc/passwd 	See "man passwd". Holds some user account info including passwords (when not "shadowed").
+* /etc/passwd -	Holds some user account info including passwords (when not "shadowed").
 * /etc/rpmrc - rpm command configuration. All the rpm command line options can be set together in this file so that all of the options apply globally when any rpm command is run on that system.
 * /etc/securetty - Contains the device names of tty lines (one per line, without leading /dev/) on which root is allowed to login.
-* /etc/usertty /etc/shadow 	Contains the encrypted password information for users' accounts and optionally the password aging information. Included fields are: Login name Encrypted password Days 
+* /etc/shadow - Contains the encrypted password information for users' accounts and optionally the password aging information. Included fields are: Login name Encrypted password Days 
 * /etc/shells - Holds the list of possible "shells" available to the system.
 * /etc/motd - Message Of The Day; used if an administrator wants to convey some message to all the users of a Linux server.
 
@@ -69,7 +66,7 @@
 * /etc/lilo.conf - Contains the system's default boot command line parameters and also the different images to boot with. You can see this list by pressing Tab at the LILO prompt.
 * /etc/logrotate.conf - Maintains the log files present in the /var/log directory.
 * /etc/identd.conf - Identd is a server that implements the TCP/IP proposed standard IDENT user identification protocol as specified in the RFC 1413 document. 
-* /etc/ld.so.conf - for the Dynamic Linker.
+* /etc/ld.so.conf - Dynamic Linker.
 * /etc/inittab - This is chronologically the first configuration file in UNIX. The first program launched after a UNIX machine is switched on is init, which knows what to launch, thanks to inittab. 
                  It is read by init at run level changes, and controls the startup of the main process.
 * /etc/termcap - A database containing all of the possible terminal types and their capabilities.
@@ -152,7 +149,7 @@
     * ~/.config/plasmarc
     * ~/.config/PlasmaUserFeedback
     * ~/.config/plasma-localerc
-    * ~/.config/plasma-org.kde.plasma.desktop-appletsrc
+    * ~/.config/plasma-org.kde.plasma.desktop-appletsrc - KDE Plasma desktop theme
     * ~/.config/powermanagementprofilesrc
     * ~/.config/touchpadxlibinputrc
     * ~/.config/Trolltech.conf
