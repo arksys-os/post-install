@@ -122,7 +122,7 @@
 #### Config
 * Blender:
     * ~/.config/blender/
-* KDE-plasma;
+* KDE-plasma:
     * ~/.config/baloofilerc
     * ~/.config/bluedevilglobalrc
     * ~/.config/breezerc
@@ -163,7 +163,7 @@
     * ~/.config/powermanagementprofilesrc
     * ~/.config/touchpadxlibinputrc
     * ~/.config/Trolltech.conf
-* Kitty
+* Kitty:
     * ~/.config/kitty/kitty.conf
 * mpv:
     * ~/.config/mpv/mpv.conf
