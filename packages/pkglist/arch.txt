@@ -1,28 +1,30 @@
+# List of arch packages, commented packages are from arksys-iso
+
 ### DE-KDE
-plasma-desktop
-plasma-meta
-plasma-workspace
-plasma-wayland-session
-# accountsservice
-appstream-qt
-baloo
-bluedevil
-drkonqi
-gawk
-kactivitymanagerd
-khelpcenter
-konsole
-kmix
-kwin
-kmousetool
-kpeople
-kpipewire
-kscreen
-ksystemstats
-kwallet
-powerdevil
-sddm-kcm
-wayland-protocols
+#plasma-desktop
+#plasma-meta
+#plasma-workspace
+#plasma-wayland-session
+#accountsservice
+#appstream-qt
+#baloo
+#bluedevil
+#drkonqi
+#gawk
+#kactivitymanagerd
+#khelpcenter
+#konsole
+#kmix
+#kwin
+#kmousetool
+#kpeople
+#kpipewire
+#kscreen
+#ksystemstats
+#kwallet
+#powerdevil
+#sddm-kcm
+#wayland-protocols
 
 ## SYS-LOADER
 #grub
@@ -31,19 +33,17 @@ wayland-protocols
 #grub-theme-vimix
 
 ### KERNEL
-linux
-# linux-lts
-# linux-hardened
-# linux-zen
-archinstall
-base
-base-devel
-dracut
-efibootmgr
-kernel-modules-hook
-linux-firmware
-linux-headers
+#linux
+#linux-firmware
+#linux-headers
 #mkinitcpio
+#archinstall
+#base
+#base-devel
+#dracut
+#efibootmgr
+#kernel-modules-hook
+
 syslinux
 wireless-regdb
 
@@ -53,26 +53,19 @@ xorg-xwayland
 upower
 
 ### VIDEO-DRIVER
-lib32-mesa
-libva-mesa-driver
-mesa
-xf86-video-amdgpu
-xf86-video-nouveau
-xf86-video-vesa
-nvidia
-# nvidia-dkms
-# nvidia-open
-# nvidia-open-dkms
-# nvidia-lts
-# nvidia-utils
-# nvidia-settings
+#lib32-mesa
+#libva-mesa-driver
+#mesa
+#nvidia #nvidia-open #nvidia-lts
+#nvidia-dkms #nvidia-open-dkms
+#nvidia-utils #nvidia-settings
+#xf86-video-amdgpu xf86-video-nouveau xf86-video-vesa
 
 ### AUDIO-DRIVER
 alsa-firmware
 pipewire
 pipewire-alsa
 pipewire-audio
-#pipewire-media-session
 pipewire-pulse
 pipewire-support
 pipewire-v4l2
@@ -150,7 +143,7 @@ kmouth
 kontrast
 krita
 ksystemlog
-# latte-dock
+#latte-dock
 markdownpart
 okular
 partitionmanager
@@ -162,7 +155,7 @@ sweeper
 yakuake
 
 ### FONTS
-noto-fonts-emoji  # fix the display of kde emoji selector app
+noto-fonts-emoji  # fix display kde-emoji-picker
 powerline-fonts
 terminus-font
 ttf-iosevka-nerd
@@ -174,7 +167,7 @@ ttf-space-mono-nerd
 ttf-terminus-nerd
 ttf-victor-mono-nerd
 
-## LIBS
+### LIBS
 #lib32-alsa-lib
 #lib32-curl
 #lib32-libxml2
@@ -183,15 +176,16 @@ ttf-victor-mono-nerd
 #lib32-pipewire-jack
 #lib32-vulkan-icd-loader
 #lib32-wayland
-libpipeline
-libx86emu
-libkiwix
+#libpipeline
+#libx86emu
+#libkiwix
+#libvirt
+#libwebp
 
 ### TERMINAL
 alacritty
 kitty
 starship
-terminus-font
 
 ## WEB-BROWSER
 chromium
@@ -209,7 +203,7 @@ libreoffice-fresh
 obsidian
 neovim
 
-## VIEWER
+### VIEWER
 audacious
 calibre
 ffmpeg
@@ -221,25 +215,22 @@ mpv
 shotwell
 vlc
 
-## RECORDER
+### RECORDER
 cheese
 kamoso
-# flameshot
+#flameshot
 obs-studio
 
 ### SOCIAL
 discord
 telegram-desktop
 
-## VIRTUAL-EMULATOR
-#libvirt
-#libwebp
-#qemu-base
+### VIRTUAL-EMULATOR
 qemu-desktop
 virt-install
-# virtualbox
+#virtualbox
 
 ### GAMES
 steam
-# supertux
-# supertuxkart
+#supertux
+#supertuxkart
