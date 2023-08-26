@@ -1,12 +1,23 @@
 #!/bin/bash
 
-echo "Start installation of packages from flathub with flatpak"
+# Check if Flatpak is installed
+if ! command -v flatpak &> /dev/null; then
+    echo "Flatpak is not installed. Installing..."
+    sudo pacman -S flatpak
 
-cd "$(dirname "$0")/pkglist"
+    # Add Flatpak repository
+    flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-# only for lines with packages in flatpak.txt, without blank spaces and special symbols
-# xargs -r -a flatpak.txt flatpak install -y
+    echo "Flatpak installation complete."
+else
+    echo "Flatpak is already installed."
+fi
 
+cd "./pkglist/"
+
+echo "Start installation of flatpak packages"
+
+# install list of packages execept comments
 grep -v '^#' flatpak.txt | xargs -r -I '{}' flatpak install -y '{}'
 
-echo "\nFlatpak packages installed"
+echo "\nCongratulation!. Flatpak packages successfully installed."
