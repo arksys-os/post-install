@@ -4,7 +4,7 @@
 if ! command -v yay &> /dev/null; then
     echo "Error: yay is not installed. Installing..."
     if ! command -v git &> /dev/null; then
-        echo "git is required to install yay. Please install git and run this script again."
+        echo "git is required to install yay. Installing git..."
         exit 1
     fi
 
@@ -20,7 +20,6 @@ fi
 echo "Start installation of AUR packages with yay"
 
 # Install list of packages except comments, executed from menu.sh path
-# grep -v "^#" list-pkgs/aur.txt | xargs sudo yay -S --noconfirm --needed
-sudo pacman -S --needed - < list-pkgs/aur.txt
+grep -v "^#" list-pkgs/aur.txt | xargs sudo yay -S --noconfirm --needed
 
 echo "\nCongratulations!. AUR packages successfully installed."

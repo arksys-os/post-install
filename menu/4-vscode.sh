@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Check if Visual Studio Code is installed
-if ! command -v yay &> /dev/null; then
+if ! command -v code &> /dev/null; then
     echo "Error: Visual Studio Code is not installed. Installing..."
     if ! command -v git &> /dev/null; then
-        echo "git is required to install yay. Please install git and run this script again."
+        echo "git is required to install vscode. Installing git..."
         exit 1
     fi
 
