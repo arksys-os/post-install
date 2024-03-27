@@ -16,8 +16,8 @@ Download this repo and execute the script "menu.sh", then you can install a sele
 > You can edit the list packages before installing in [list-pkgs](list-pkgs) for arch, aur and flatpak.
 
 ```sh
-git clone https://github.com/arksys-os/arksys_post-install.git
-cd ./arksys_post-install/
+git clone https://github.com/arksys-os/post-install.git
+cd ./post-install/
 sh ./menu.sh
 ```
 
