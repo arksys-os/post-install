@@ -19,8 +19,8 @@ fi
 
 echo "Start installation of AUR packages with yay"
 
-# Install list of packages except comments
-# grep -v "^#" ../list-pkgs/aur.txt | xargs sudo yay -S --noconfirm --needed
-sudo pacman -S --needed - < ../list-pkgs/aur.txt
+# Install list of packages except comments, executed from menu.sh path
+# grep -v "^#" list-pkgs/aur.txt | xargs sudo yay -S --noconfirm --needed
+sudo pacman -S --needed - < list-pkgs/aur.txt
 
 echo "\nCongratulations!. AUR packages successfully installed."
