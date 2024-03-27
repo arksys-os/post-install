@@ -8,6 +8,6 @@ sudo cp -r config-files/.var ~/
 rm ~/import.sh
 
 # Change ownership
-chown -R $USER: ~/.config/
+sudo chown -R $USER: ~/.config/ ~/.var/
 
 echo "Imported config files"

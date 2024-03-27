@@ -33,12 +33,12 @@ Select an option:
 $(ColorBlue 'Choose an option:') "
     read choice
     case $choice in
-		1) sh ./menu/pacman.sh ; menu ;;
-		2) sh ./menu/yay.sh ; menu ;;
-		3) sh ./menu/flatpak.sh ; menu ;;
-		4) sh ./menu/vscode.sh ; menu ;;
-		5) sh ./menu/config-import.sh ; menu ;;
-		6) sh ./menu/config-export.sh ; menu ;;
+		1) sh menu/1-pacman.sh ; menu ;;
+		2) sh menu/2-yay.sh ; menu ;;
+		3) sh menu/3-flatpak.sh ; menu ;;
+		4) sh menu/4-vscode.sh ; menu ;;
+		5) sh menu/5-config-import.sh ; menu ;;
+		6) sh menu/6-config-export.sh ; menu ;;
 		0) exit 0 ;;
 		*) echo -e $red"Wrong option."$clear; WrongCommand;;
 	esac

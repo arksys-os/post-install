@@ -18,7 +18,7 @@ else
 fi
 
 # Path to the file containing extension names
-vscode_pkgs="../list-pkgs/vscode.txt"
+vscode_pkgs="list-pkgs/vscode.txt"
 
 # Check if the file exists
 if [ ! -f "$vscode_pkgs" ]; then
