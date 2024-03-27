@@ -1,78 +1,19 @@
-# List of arch packages, commented packages are from arksys-iso
+### AUR
+activitywatch-bin
+bottles
+brew-git
+debtap
+downgrade
+eaglemode
+fastfetch
+google-earth-pro
+helvum-git
+nb
+ungoogled-chromium
+upscayl-bin
+xampp
 
-### DE-KDE
-#plasma-desktop
-#plasma-meta
-#plasma-workspace
-#plasma-wayland-session
-#accountsservice
-#appstream-qt
-#baloo
-#bluedevil
-#drkonqi
-#gawk
-#kactivitymanagerd
-#khelpcenter
-#konsole
-#kmix
-#kwin
-#kmousetool
-#kpeople
-#kpipewire
-#kscreen
-#ksystemstats
-#kwallet
-#powerdevil
-#sddm-kcm
-#wayland-protocols
-
-## SYS-LOADER
-#grub
-#grub-btrfs
-#grub-customizer
-#grub-theme-vimix
-
-### KERNEL
-#linux
-#linux-firmware
-#linux-headers
-#mkinitcpio
-#archinstall
-#base
-#base-devel
-#dracut
-#efibootmgr
-#kernel-modules-hook
-
-syslinux
-wireless-regdb
-
-### DISPLAY-SERVER
-xorg-server
-xorg-xwayland
-upower
-
-### VIDEO-DRIVER
-#lib32-mesa
-#libva-mesa-driver
-#mesa
-#nvidia #nvidia-open #nvidia-lts
-#nvidia-dkms #nvidia-open-dkms
-#nvidia-utils #nvidia-settings
-#xf86-video-amdgpu xf86-video-nouveau xf86-video-vesa
-
-### AUDIO-DRIVER
-alsa-firmware
-pipewire
-pipewire-alsa
-pipewire-audio
-pipewire-pulse
-pipewire-support
-pipewire-v4l2
-pipewire-x11-bell
-pipewire-zeroconf
-
-## CLI
+### CLI
 asciinema
 bash-completion
 bind
@@ -109,8 +50,6 @@ whois
 wine
 yad
 yt-dlp
-
-### GUI
 bleachbit
 clonezilla
 firewalld
@@ -167,21 +106,6 @@ ttf-space-mono-nerd
 ttf-terminus-nerd
 ttf-victor-mono-nerd
 
-### LIBS
-#lib32-alsa-lib
-#lib32-curl
-#lib32-libxml2
-#lib32-libxmu
-#lib32-pipewire
-#lib32-pipewire-jack
-#lib32-vulkan-icd-loader
-#lib32-wayland
-#libpipeline
-#libx86emu
-#libkiwix
-#libvirt
-#libwebp
-
 ### TERMINAL
 alacritty
 kitty
@@ -228,7 +152,7 @@ telegram-desktop
 ### VIRTUAL-EMULATOR
 qemu-desktop
 virt-install
-#virtualbox
+virtualbox
 
 ### GAMES
 steam

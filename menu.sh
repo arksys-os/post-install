@@ -26,13 +26,19 @@ Select an option:
 	$(ColorGreen '1)') Install arch packages
 	$(ColorGreen '2)') Install aur packages
 	$(ColorGreen '3)') Install flatpak packages
+	$(ColorGreen '4)') Install vscode packages
+	$(ColorGreen '5)') Import config files
+	$(ColorGreen '6)') Export config files
 	$(ColorGreen '0)') Exit
 $(ColorBlue 'Choose an option:') "
     read choice
     case $choice in
-		1) sh ./packages/pacman.sh ; menu ;;
-		2) sh ./packages/yay.sh ; menu ;;
-		3) sh ./packages/flatpak.sh ; menu ;;
+		1) sh menu-options/pacman.sh ; menu ;;
+		2) sh menu-options/yay.sh ; menu ;;
+		3) sh menu-options/flatpak.sh ; menu ;;
+		4) sh menu-options/vscode.sh ; menu ;;
+		5) sh menu-options/config-import.sh ; menu ;;
+		6) sh menu-options/config-export.sh ; menu ;;
 		0) exit 0 ;;
 		*) echo -e $red"Wrong option."$clear; WrongCommand;;
 	esac

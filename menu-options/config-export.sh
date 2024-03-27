@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # change the directory name of the config files
-$export_dir =  ~/backup/dotfiles
+$export_dir =  ~/exported_config
 
 # create export directory if it doesn't exist
 mkdir -p $export_dir/.config

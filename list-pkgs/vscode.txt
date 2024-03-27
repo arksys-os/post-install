@@ -1,0 +1,13 @@
+bmewburn.vscode-intelephense-client
+foam.foam-vscode
+ms-azuretools.vscode-docker
+ms-dotnettools.dotnet-interactive-vscode
+ms-dotnettools.vscode-dotnet-runtime
+ms-onecentlin.laravel-blade
+ms-vscode.live-server
+MS-vsliveshare.vsliveshare
+mtxr.sqltools
+pomdtr.excalidraw-editor
+python.python
+redhat.vscode-xml
+tomoki1207.pdf

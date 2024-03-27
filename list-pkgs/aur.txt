@@ -1,0 +1,10 @@
+activitywatch-bin
+brew-git
+debtap
+downgrade
+eaglemode
+fastfetch
+google-earth-pro
+nb
+upscayl-bin
+xampp
