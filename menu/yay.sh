@@ -8,7 +8,7 @@ if ! command -v yay &> /dev/null; then
         exit 1
     fi
 
-    git clone https://aur.archlinux.org/yay.git
+    cd && git clone https://aur.archlinux.org/yay.git
     cd ~/yay && makepkg -si
     # rm -rf ~/yay
     echo "yay installation complete."

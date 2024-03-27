@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # copy config files
-sudo cp -r ../config-files/.config ~/
-sudo cp -r ../config-files/.var ~/
+sudo cp -r config-files/.config ~/
+sudo cp -r config-files/.var ~/
 
 # remove import
 rm ~/import.sh

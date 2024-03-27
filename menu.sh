@@ -19,59 +19,87 @@ ColorBlue(){
     echo -ne $blue$1$clear
 }
 
-# Function to handle installation options
-install_menu() {
-    echo -e "\n$(ColorGreen 'Installation Options:')"
-    echo -e "\t$(ColorGreen '1)') Install arch packages"
-    echo -e "\t$(ColorGreen '2)') Install aur packages"
-    echo -e "\t$(ColorGreen '3)') Install flatpak packages"
-    echo -e "\t$(ColorGreen '4)') Install vscode packages"
-    echo -e "\t$(ColorGreen '0)') Back to main menu"
-    echo -ne "$(ColorBlue 'Choose an option:') "
-    read install_choice
-    case $install_choice in
-        1) sh menu-options/pacman.sh ;;
-        2) sh menu-options/yay.sh ;;
-        3) sh menu-options/flatpak.sh ;;
-        4) sh menu-options/vscode.sh ;;
-        0) return ;;
-        *) echo -e "${red}Wrong option.${clear}" ;;
-    esac
+menu(){
+echo -ne "
+Select an option:
+	$(ColorGreen '1)') Install arch packages
+	$(ColorGreen '2)') Install aur packages
+	$(ColorGreen '3)') Install flatpak packages
+	$(ColorGreen '4)') Install vscode packages
+	$(ColorGreen '5)') Import config files
+	$(ColorGreen '6)') Export config files
+
+	$(ColorGreen '0)') Exit
+$(ColorBlue 'Choose an option:') "
+    read choice
+    case $choice in
+		1) sh ./menu/pacman.sh ; menu ;;
+		2) sh ./menu/yay.sh ; menu ;;
+		3) sh ./menu/flatpak.sh ; menu ;;
+		4) sh ./menu/vscode.sh ; menu ;;
+		5) sh ./menu/config-import.sh ; menu ;;
+		6) sh ./menu/config-export.sh ; menu ;;
+		0) exit 0 ;;
+		*) echo -e $red"Wrong option."$clear; WrongCommand;;
+	esac
 }
 
-# Function to handle configuration options
-config_menu() {
-    echo -e "\n$(ColorGreen 'Configuration Options:')"
-    echo -e "\t$(ColorGreen '1)') Import config files"
-    echo -e "\t$(ColorGreen '2)') Export config files"
-    echo -e "\t$(ColorGreen '0)') Back to main menu"
-    echo -ne "$(ColorBlue 'Choose an option:') "
-    read config_choice
-    case $config_choice in
-        1) sh menu-options/config-import.sh ;;
-        2) sh menu-options/config-export.sh ;;
-        0) return ;;
-        *) echo -e "${red}Wrong option.${clear}" ;;
-    esac
-}
+# Call the menu function
+menu
 
-# Main menu function
-main_menu() {
-    while true; do
-        echo -e "\n$(ColorGreen 'Main Menu:')"
-        echo -e "\t$(ColorGreen '1)') Installation"
-        echo -e "\t$(ColorGreen '2)') Configuration"
-        echo -e "\t$(ColorGreen '0)') Exit"
-        echo -ne "$(ColorBlue 'Choose an option:') "
-        read main_choice
-        case $main_choice in
-            1) install_menu ;;
-            2) config_menu ;;
-            0) exit ;;
-            *) echo -e "${red}Wrong option.${clear}" ;;
-        esac
-    done
-}
+## Function to handle installation options
+# install_menu() {
+#     echo -e "\n$(ColorGreen 'Installation Options:')"
+#     echo -e "\t$(ColorGreen '1)') Install arch packages"
+#     echo -e "\t$(ColorGreen '2)') Install aur packages"
+#     echo -e "\t$(ColorGreen '3)') Install flatpak packages"
+#     echo -e "\t$(ColorGreen '4)') Install vscode packages"
+#     echo -e "\t$(ColorGreen '0)') Back to main menu"
+#     echo -ne "$(ColorBlue 'Choose an option:') "
+#     read install_choice
+#     case $install_choice in
+#         1) sh menu/pacman.sh ;;
+#         2) sh menu/yay.sh ;;
+#         3) sh menu/flatpak.sh ;;
+#         4) sh menu/vscode.sh ;;
+#         0) return ;;
+#         *) echo -e "${red}Wrong option.${clear}" ;;
+#     esac
+# }
+
+## Function to handle configuration options
+# config_menu() {
+#     echo -e "\n$(ColorGreen 'Configuration Options:')"
+#     echo -e "\t$(ColorGreen '1)') Import config files"
+#     echo -e "\t$(ColorGreen '2)') Export config files"
+#     echo -e "\t$(ColorGreen '0)') Back to main menu"
+#     echo -ne "$(ColorBlue 'Choose an option:') "
+#     read config_choice
+#     case $config_choice in
+#         1) sh menu/config-import.sh ;;
+#         2) sh menu/config-export.sh ;;
+#         0) return ;;
+#         *) echo -e "${red}Wrong option.${clear}" ;;
+#     esac
+# }
+
+## Main menu function
+# main_menu() {
+#     while true; do
+#         echo -e "\n$(ColorGreen 'Main Menu:')"
+#         echo -e "\t$(ColorGreen '1)') Installation"
+#         echo -e "\t$(ColorGreen '2)') Configuration"
+#         echo -e "\t$(ColorGreen '0)') Exit"
+#         echo -ne "$(ColorBlue 'Choose an option:') "
+#         read main_choice
+#         case $main_choice in
+#             1) install_menu ;;
+#             2) config_menu ;;
+#             0) exit ;;
+#             *) echo -e "${red}Wrong option.${clear}" ;;
+#         esac
+#     done
+# }
 
 # Call the main menu function
-main_menu
+#main_menu

@@ -4,7 +4,8 @@
 $export_dir =  ~/exported_config
 
 # create export directory if it doesn't exist
-mkdir -p $export_dir/.config
+sudo mkdir -p $export_dir/.config/{chromium,GIMP,hypr,kitty,mpv,neofetch,nvim,obs-studio,rofi}
+sudo mkdir -p $export_dir/.mozilla
 
 # copy the config files
 cp -r ~/.config/{chromium,GIMP,hypr,kitty,mpv,neofetch,nvim,obs-studio,rofi} $export_dir/.config

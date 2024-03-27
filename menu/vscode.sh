@@ -8,7 +8,7 @@ if ! command -v yay &> /dev/null; then
         exit 1
     fi
 
-    git clone https://aur.archlinux.org/visual-studio-code-bin.git
+    cd && git clone https://aur.archlinux.org/visual-studio-code-bin.git
     cd ~/visual-studio-code-bin && makepkg -si
     # rm -rf ~/visual-studio-code-bin
     echo "visual-studio-code-bin installation complete."
