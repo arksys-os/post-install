@@ -16,6 +16,6 @@ fi
 echo "Start installation of flatpak packages"
 
 # install list of packages execept comments
-grep -v '^#' ../list-pkgs/flatpak.txt | xargs -r -I '{}' flatpak install -y '{}'
+grep -v '^#' ../list-pkgs/flatpak.txt | xargs -r -I '{}' sudo flatpak install -y '{}'
 
 echo "\nCongratulation!. Flatpak packages successfully installed."
