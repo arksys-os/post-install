@@ -15,7 +15,7 @@ cd ./post-install/
 sh ./menu.sh
 ```
 
-Option2 directly run the [menu.sh script](./menu.sh) with curl
+Option 2 directly run the [menu.sh script](./menu.sh) with curl
 ```sh
 bash <(curl -s https://raw.githubusercontent.com/sys/post-install/main/menu.sh)
 ```
