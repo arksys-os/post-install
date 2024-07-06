@@ -17,5 +17,5 @@ sh ./menu.sh
 
 Option 2 directly run the [menu.sh script](./menu.sh) with curl
 ```sh
-bash <(curl -s https://raw.githubusercontent.com/sys/post-install/main/menu.sh)
+bash <(curl -s https://raw.githubusercontent.com/arksys-os/post-install/main/menu.sh)
 ```
